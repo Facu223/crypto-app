@@ -1,0 +1,135 @@
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coin-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+}
+
+.button-name{
+  padding: 6px 30px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(27, 27, 248);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.coin-row {
+  border-top: 1px solid grey;
+  width: 100%;
+  padding: 70px;
+  text-align: center;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+}
+
+.coin-input::placeholder {
+  color: #e2e2e2;
+}
+
+.coin-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coin img {
+  height: 100px;
+}
+
+.red {
+  color: #f00606;
+}
+
+.green {
+  color: #08aa08;
+}
+
+@media (min-width: 838px) {
+  .coin img {
+    height: 30px;
+  }
+
+  .coin-container {
+    width: 100%;
+    display: flex;
+  }
+
+  .coin-row {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    text-align: center;
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 6px;
+  }
+
+  .coin-row:hover {
+    border: 1px solid white;
+    background-color: rgb(253, 238, 253);
+  }
+
+  .button-name {
+    padding: 6px 30px;
+    font-size: 15px;
+    border: none;
+    background-color: rgb(27, 27, 248);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button-name:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  .coin {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .coin-data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 50px;
+  }
+
+  .coin h1 {
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .coin p {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1067px) {
+  .coin-container {
+    width: 90%;
+  }
+}

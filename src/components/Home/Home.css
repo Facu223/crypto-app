@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+.article-container {
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 17ch;
+  animation: typing 2s steps(17), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+article {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.img-btc {
+  height: 200px;
+}
+
+.img-btc:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.btc-description {
+  font-family: "Fredoka", sans-serif;
+  font-size: 20px;
+  width: 60%;
+  color: grey;
+}
+
+.first-article {
+  margin: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 993px) {
+  .btc-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 541px) {
+  .article-container {
+    padding: 0;
+  }
+}
+
+.pros-contras {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pros-contras div {
+  width: 40%;
+}
+
+.stick {
+  border: 1px solid rgb(104, 247, 128);
+  height: 300px;
+  margin-top: 110px;
+}
+
+ul {
+  list-style: none;
+}
+
+.ventajas li {
+  margin: 50px;
+}
+
+.ventajas {
+  font-size: 14px;
+}
+
+.desventajas {
+  font-size: 14px;
+}
+
+.ventajas:hover {
+  transform: scale(1.01);
+  border: 2px solid rgb(17, 219, 11);
+  transition: 0.6s;
+  padding: 0.3px;
+  border-radius: 6px;
+}
+
+.desventajas:hover {
+  transform: scale(1.01);
+  border: 2px solid rgb(201, 8, 8);
+  transition: 0.6s;
+  border-radius: 6px;
+}
+
+.desventajas li {
+  margin: 50px;
+}
+
+.ventajas-title {
+  margin-top: 38px;
+}
+
+.desventajas-title {
+  margin-top: 38px;
+}
+
+@media (max-width: 613px) {
+  .ventajas li {
+    margin: 10px;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  .ventajas:hover {
+    border: none;
+    transform: none;
+  }
+
+  .desventajas li {
+    margin: 10px;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  .desventajas:hover {
+    border: none;
+    transform: none;
+  }
+}
+
+@media (max-width: 492px) {
+  .pros-contras {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stick {
+    display: none;
+  }
+
+  .pros-contras div {
+    width: 100%;
+  }
+}
