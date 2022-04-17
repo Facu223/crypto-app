@@ -83,7 +83,6 @@
   }
 
   .coin-row:hover {
-    border: 1px solid white;
     background-color: rgb(253, 238, 253);
   }
 

@@ -96,7 +96,12 @@ const Home = () => {
           </div>
         </div>
       </article>
-
+      <footer>
+        <p>All rights reserved</p>
+        <a href="https://mi-portafolio-facu.netlify.app/" target="_blank">
+          By Facundo García
+        </a>
+      </footer>
       
     </div>
   );

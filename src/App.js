@@ -15,12 +15,7 @@ function App() {
         <Route path="/crypto-list/:id" element={<OneCoin />} />
       </Routes>
 
-      <footer>
-        <p>All rights reserved</p>
-        <a href="https://mi-portafolio-facu.netlify.app/" target="_blank">
-          By Facundo García
-        </a>
-      </footer>
+      
     </div>
   );
 }

@@ -15,14 +15,13 @@ function List() {
     axios
       .get(api)
       .then((res) => {
-        console.log(res.data)
         setCoins(res.data);
       })
       .catch((error) => console.log(error));
   }, []);
 
   const handleChange = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setSearch(e.target.value);
   };
 
@@ -35,7 +34,9 @@ function List() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text"><FcSearch/> Search a currency</h1>
+        <h1 className="coin-text">
+          <FcSearch /> Search a currency
+        </h1>
         <form>
           <input
             type="text"
@@ -64,6 +65,18 @@ function List() {
           );
         })
       )}
+
+<div>
+  <footer>
+        <p>All rights reserved</p>
+        <a href="https://mi-portafolio-facu.netlify.app/" target="_blank">
+          By Facundo García
+        </a>
+      </footer>
+</div>
+
+
+      
     </div>
   );
 }

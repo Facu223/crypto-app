@@ -234,7 +234,7 @@ const OneCoin = () => {
             onChange={handleChangeCurrency}
             value={toConvert}
           >
-            <option value=""> -- Seleccionar -- </option>
+            <option value=""> -- Select -- </option>
             <option value="USD"> USD </option>
             <option value="GBP"> GBP </option>
             <option value="EUR"> EUR </option>
